@@ -51,6 +51,8 @@ for (const c of cases) {
 const q = 'What is the expense ratio of Groww Large Cap Fund?';
 let r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'The expense ratio of Groww Large Cap Fund is 0.95%.', model: 'fake' }) });
 ok(r.mode === 'extractive' && r.answer.includes('1.27%'), 'invented number must be rejected and replaced by the source text');
+r = await ask('What is the expense ratio of Groww Large Cap Fund regular plan?', { generate: async (_, h) => ({ answerable: true, chunk_id: 'LC-ER-2', answer: 'As on 30 Sep 2026, the base expense ratio of Groww Large Cap Fund (Regular Plan) was 2.09%.', model: 'fake' }) });
+ok(r.mode === 'llm', 'the chunk\'s own as-of date is allowed in an answer');
 r = await ask(q, { generate: async () => ({ answerable: true, chunk_id: 'NOT-A-CHUNK', answer: 'It is 1.27%.', model: 'fake' }) });
 ok(r.mode === 'extractive' && r.chunk_id === 'LC-ER-1', 'unknown chunk id must fall back to the top retrieved chunk');
 r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'It is 1.27%, so you should invest now.', model: 'fake' }) });
