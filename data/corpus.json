@@ -2,143 +2,543 @@
   "amc": "Groww Mutual Fund",
   "last_updated": "08 Nov 2026",
   "schemes": {
-    "large_cap": { "name": "Groww Large Cap Fund", "category": "Large Cap" },
-    "elss": { "name": "Groww ELSS Tax Saver Fund", "category": "ELSS" },
-    "multicap": { "name": "Groww Multicap Fund", "category": "Multi Cap" },
-    "total_market": { "name": "Groww Nifty Total Market Index Fund", "category": "Index Fund" }
+    "large_cap": {
+      "name": "Groww Large Cap Fund",
+      "category": "Large Cap"
+    },
+    "elss": {
+      "name": "Groww ELSS Tax Saver Fund",
+      "category": "ELSS"
+    },
+    "multicap": {
+      "name": "Groww Multicap Fund",
+      "category": "Multi Cap"
+    },
+    "total_market": {
+      "name": "Groww Nifty Total Market Index Fund",
+      "category": "Index Fund"
+    }
   },
   "chunks": [
-    { "id": "LC-ER-1", "scheme": "large_cap", "topic": "expense_ratio", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "The expense ratio of Groww Large Cap Fund (Direct Plan - Growth) is 1.27%, inclusive of GST, as shown on the scheme page." },
-    { "id": "LC-ER-2", "scheme": "large_cap", "topic": "expense_ratio", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "As on 30 Sep 2026, the base expense ratio of Groww Large Cap Fund was 2.09% for the Regular Plan and 1.18% for the Direct Plan, per the September 2026 factsheet." },
-    { "id": "LC-EXIT", "scheme": "large_cap", "topic": "exit_load", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "The exit load of Groww Large Cap Fund is 1% if units are redeemed or switched out within 7 days from the date of allotment. There is no exit load (nil) after 7 days from the date of allotment." },
-    { "id": "LC-MIN", "scheme": "large_cap", "topic": "min_sip", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "The minimum SIP amount for Groww Large Cap Fund (Direct Growth) is ₹500, and the minimum lumpsum (one-time) investment is also ₹500." },
-    { "id": "LC-BENCH", "scheme": "large_cap", "topic": "benchmark", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "The benchmark of Groww Large Cap Fund is the Nifty 100 TRI (Total Return Index)." },
-    { "id": "LC-RISK", "scheme": "large_cap", "topic": "riskometer", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "The riskometer of Groww Large Cap Fund is at Very High risk. Its benchmark, Nifty 100 TRI, is also at Very High risk on the benchmark riskometer." },
-    { "id": "LC-LOCK", "scheme": "large_cap", "topic": "lock_in", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww Large Cap Fund is an open ended equity scheme predominantly investing in large cap stocks, and no lock-in period is listed for it. The only redemption charge listed is the exit load of 1% within 7 days of allotment." },
-    { "id": "LC-CAT", "scheme": "large_cap", "topic": "category", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Large Cap Fund is an equity scheme in the Large Cap category. Its objective is long term capital appreciation by investing mainly in equity and equity-related securities of large cap companies, and it does not assure or guarantee any returns." },
-    { "id": "LC-INCEP", "scheme": "large_cap", "topic": "inception", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww Large Cap Fund was launched (inception/allotment date) on 10 February 2012." },
-    { "id": "LC-FM", "scheme": "large_cap", "topic": "fund_manager", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Large Cap Fund is managed by Anupam Tiwari (since May 2023), Saptarshee Chatterjee (since Sep 2025), Nikhil Satam (since Jul 2026) and Hitesh Das (since Sep 2026)." },
-    { "id": "LC-PLANS", "scheme": "large_cap", "topic": "plans", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Large Cap Fund is available as Direct Growth, Direct IDCW Monthly, Regular Growth and Regular IDCW Monthly plans." },
-
-    { "id": "ELSS-ER-1", "scheme": "elss", "topic": "expense_ratio", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "The expense ratio of Groww ELSS Tax Saver Fund (Direct Plan - Growth) is 0.50%, inclusive of GST, as shown on the scheme page." },
-    { "id": "ELSS-ER-2", "scheme": "elss", "topic": "expense_ratio", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "As on 30 Sep 2026, the base expense ratio of Groww ELSS Tax Saver Fund was 2.08% for the Regular Plan and 0.83% for the Direct Plan, per the September 2026 factsheet." },
-    { "id": "ELSS-LOCK", "scheme": "elss", "topic": "lock_in", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww ELSS Tax Saver Fund has a lock-in period of 3 years. Units cannot be redeemed until 3 years from the date of allotment." },
-    { "id": "ELSS-LOCK-RULE", "scheme": "elss", "topic": "lock_in", "source": "S13", "as_of": "06 Oct 2017",
-      "text": "Under SEBI's scheme categorisation rules, an ELSS is an open ended equity linked saving scheme with a statutory lock-in of 3 years and a tax benefit. It must invest at least 80% of total assets in equity and equity related instruments, in line with the Equity Linked Saving Scheme, 2005." },
-    { "id": "ELSS-EXIT", "scheme": "elss", "topic": "exit_load", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "The exit load of Groww ELSS Tax Saver Fund is nil. Units can only be redeemed after the 3-year lock-in period ends." },
-    { "id": "ELSS-MIN", "scheme": "elss", "topic": "min_sip", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "The minimum SIP amount for Groww ELSS Tax Saver Fund (Direct Growth) is ₹500, and the minimum lumpsum (one-time) investment is also ₹500." },
-    { "id": "ELSS-BENCH", "scheme": "elss", "topic": "benchmark", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "The benchmark of Groww ELSS Tax Saver Fund is the Nifty 500 TRI (Total Return Index)." },
-    { "id": "ELSS-RISK", "scheme": "elss", "topic": "riskometer", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "The riskometer of Groww ELSS Tax Saver Fund is at Very High risk. Its benchmark, Nifty 500 TRI, is also at Very High risk on the benchmark riskometer." },
-    { "id": "ELSS-CAT", "scheme": "elss", "topic": "category", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww ELSS Tax Saver Fund is an equity scheme in the ELSS category that offers tax benefits under Section 80C of the Income Tax Act, 1961. Its objective is long term capital appreciation from a diversified portfolio of mainly equity and equity related instruments, and it does not assure or guarantee any returns." },
-    { "id": "ELSS-INCEP", "scheme": "elss", "topic": "inception", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww ELSS Tax Saver Fund was launched (inception/allotment date) on 28 December 2017." },
-    { "id": "ELSS-FM", "scheme": "elss", "topic": "fund_manager", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww ELSS Tax Saver Fund is managed by Paras Matalia (since Jul 2025) and Nikhil Satam (since Nov 2025)." },
-    { "id": "ELSS-PLANS", "scheme": "elss", "topic": "plans", "source": "S02", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww ELSS Tax Saver Fund is available as Direct Growth, Direct IDCW, Regular Growth and Regular IDCW plans." },
-
-    { "id": "MC-ER", "scheme": "multicap", "topic": "expense_ratio", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "As on 30 Sep 2026, the base expense ratio of Groww Multicap Fund was 1.79% for the Regular Plan and 0.34% for the Direct Plan, per the September 2026 factsheet." },
-    { "id": "MC-EXIT", "scheme": "multicap", "topic": "exit_load", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "The exit load of Groww Multicap Fund is 1% if units are redeemed or switched out within 1 year from the date of allotment. There is no exit load (nil) after 1 year from the date of allotment." },
-    { "id": "MC-MIN", "scheme": "multicap", "topic": "min_sip", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "The minimum SIP for Groww Multicap Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (initial) investment is ₹500, in multiples of ₹1." },
-    { "id": "MC-INST", "scheme": "multicap", "topic": "sip_instalments", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "The minimum number of SIP instalments for Groww Multicap Fund is 180 for daily, 24 for weekly, 12 for monthly and 4 for quarterly SIPs." },
-    { "id": "MC-BENCH", "scheme": "multicap", "topic": "benchmark", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "The benchmark of Groww Multicap Fund is the Nifty 500 Multicap 50:25:25 Index TRI (Total Return Index)." },
-    { "id": "MC-RISK", "scheme": "multicap", "topic": "riskometer", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "The riskometer of Groww Multicap Fund is at Very High risk." },
-    { "id": "MC-LOCK", "scheme": "multicap", "topic": "lock_in", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "Groww Multicap Fund has no lock-in period, because it is an open ended scheme. An exit load of 1% applies if units are redeemed within 1 year of allotment." },
-    { "id": "MC-CAT", "scheme": "multicap", "topic": "category", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "Groww Multicap Fund is an open ended equity scheme investing across large cap, mid cap and small cap stocks (Multi Cap category). Its objective is long-term capital appreciation by predominantly investing in equity and equity-related instruments of large, mid and small-cap companies." },
-    { "id": "MC-RULE", "scheme": "multicap", "topic": "category", "source": "S14", "as_of": "26 Feb 2026",
-      "text": "Under SEBI's categorisation rules, a Multi Cap fund must invest at least 75% of total assets in equity, with at least 25% each in large cap, mid cap and small cap companies." },
-    { "id": "MC-INCEP", "scheme": "multicap", "topic": "inception", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww Multicap Fund was launched (inception/allotment date) on 16 December 2024." },
-    { "id": "MC-FM", "scheme": "multicap", "topic": "fund_manager", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "Groww Multicap Fund is managed by Anupam Tiwari (since Dec 2024), Saptarshee Chatterjee (since Sep 2025), Nikhil Satam (since Jul 2026) and Hitesh Das (since Sep 2026)." },
-    { "id": "MC-PLANS", "scheme": "multicap", "topic": "plans", "source": "S04", "as_of": "SID dated 30 Oct 2026",
-      "text": "Groww Multicap Fund has a Regular Plan and a Direct Plan with a common portfolio and separate NAVs. Each plan offers a Growth option and an IDCW (Income Distribution cum Capital Withdrawal) option." },
-
-    { "id": "TM-ER", "scheme": "total_market", "topic": "expense_ratio", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "As on 30 Sep 2026, the base expense ratio of Groww Nifty Total Market Index Fund was 0.90% for the Regular Plan and 0.53% for the Direct Plan, per the September 2026 factsheet." },
-    { "id": "TM-ER-CAP", "scheme": "total_market", "topic": "expense_ratio", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "The SID of Groww Nifty Total Market Index Fund allows a base expense ratio of up to 0.90% of the scheme's daily net assets. The actual expense ratio charged is published on the AMC website." },
-    { "id": "TM-EXIT", "scheme": "total_market", "topic": "exit_load", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "The exit load of Groww Nifty Total Market Index Fund is 0.25% if units are redeemed or switched out within 7 days from the date of allotment. There is no exit load (nil) after 7 days from the date of allotment." },
-    { "id": "TM-MIN", "scheme": "total_market", "topic": "min_sip", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "The minimum SIP for Groww Nifty Total Market Index Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (application) amount is ₹500, in multiples of ₹1." },
-    { "id": "TM-BENCH", "scheme": "total_market", "topic": "benchmark", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "The benchmark of Groww Nifty Total Market Index Fund is the Nifty Total Market Index (Total Return Index). It is an index fund that replicates/tracks this index." },
-    { "id": "TM-RISK", "scheme": "total_market", "topic": "riskometer", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "The riskometer of Groww Nifty Total Market Index Fund is at Very High risk. Its benchmark, the Nifty Total Market Index (TRI), is also rated Very High risk." },
-    { "id": "TM-LOCK", "scheme": "total_market", "topic": "lock_in", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "Groww Nifty Total Market Index Fund has no lock-in period, because it is an open-ended index fund. An exit load of 0.25% applies if units are redeemed within 7 days of allotment." },
-    { "id": "TM-CAT", "scheme": "total_market", "topic": "category", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "Groww Nifty Total Market Index Fund is an open-ended index fund that replicates/tracks the Nifty Total Market Index." },
-    { "id": "TM-INCEP", "scheme": "total_market", "topic": "inception", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww Nifty Total Market Index Fund was launched (inception/allotment date) on 23 October 2023." },
-    { "id": "TM-FM", "scheme": "total_market", "topic": "fund_manager", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "Groww Nifty Total Market Index Fund is managed by Aakash Chauhan, Nikhil Satam and Shashi Kumar, per the September 2026 factsheet." },
-    { "id": "TM-PLANS", "scheme": "total_market", "topic": "plans", "source": "S05", "as_of": "SID dated 30 Jul 2026",
-      "text": "Groww Nifty Total Market Index Fund has a Regular Plan and a Direct Plan with a common portfolio and separate NAVs, each with a Growth option and an IDCW option. Fresh subscriptions under the IDCW option have been discontinued until further notice by the AMC (Addendum dated 29 Jun 2026)." },
-
-    { "id": "GEN-STAMP", "scheme": "general", "topic": "stamp_duty", "source": "S01", "as_of": "page viewed 08 Nov 2026",
-      "text": "A stamp duty of 0.005% applies on mutual fund investments (purchases) from 1 July 2020, as shown on Groww Mutual Fund scheme pages." },
-    { "id": "GEN-CAS-DISPATCH", "scheme": "general", "topic": "cas_dispatch", "source": "S06", "as_of": "SAI dated 02 Nov 2026",
-      "text": "As per Groww Mutual Fund's Statement of Additional Information, a Consolidated Account Statement (CAS) is emailed within 12 days of the month end for any month in which your folio had a transaction. If there were no transactions, a CAS with your holdings is emailed half-yearly, on or before 18 April and 18 October. A CAS is not sent if PAN is not updated in the folio." },
-    { "id": "GEN-CAS-HOW", "scheme": "general", "topic": "statement", "source": "S15", "as_of": "page viewed 08 Nov 2026",
-      "text": "To download a Consolidated Account Statement (CAS), log in to MF Central (mfcentral.com), choose Summary or Detailed CAS and pick the period (current financial year, previous financial year or a specific period of up to 365 days). You can also request an e-CAS by email from CAMS (camsonline.com) or KFintech (mfs.kfintech.com)." },
-    { "id": "GEN-CG", "scheme": "general", "topic": "capital_gains", "source": "S16", "as_of": "page viewed 08 Nov 2026",
-      "text": "To download a capital-gains statement, use the Reports section of the platform you invested through, or the RTA websites. On CAMS (camsonline.com) choose Statements > Capital Gain/Loss Statement; on KFintech (mfs.kfintech.com) go to Investor Statement and Report > Capital Gains Statement and pick the consolidated option." },
-    { "id": "GEN-ELSS-STMT", "scheme": "general", "topic": "elss_statement", "source": "S19", "as_of": "page viewed 08 Nov 2026",
-      "text": "To download your ELSS tax statement in the Groww app, go to your Profile, select Reports, find 'Mutual Fund - ELSS statement' under Tax, and click Download. The file is password-protected, and the password is your PAN in capital letters." },
-    { "id": "GEN-CONTACT", "scheme": "general", "topic": "contact", "source": "S07", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Mutual Fund investor support can be reached at support@growwmf.in or +91 80501 80222. For offline document submission, investors can visit the nearest KFintech branch." },
-    { "id": "GEN-AMC", "scheme": "general", "topic": "amc", "source": "S20", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Mutual Fund schemes are managed by Groww Asset Management Limited, whose SEBI Registration No. is MF/068/11/03." },
-    { "id": "GEN-DOCS", "scheme": "general", "topic": "documents", "source": "S11", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Mutual Fund's website has a Downloads section with the Key Information Memorandum (KIM), Scheme Information Document (SID), Statement of Additional Information (SAI), Fact Sheet, Riskometer, Expense Ratio and Scheme Performance documents." },
-    { "id": "GEN-FACTSHEET", "scheme": "general", "topic": "factsheet", "source": "S09", "as_of": "page viewed 08 Nov 2026",
-      "text": "Groww Mutual Fund publishes a monthly factsheet for its schemes in the Downloads > Fact Sheet section of its website." },
-    { "id": "GEN-PERF", "scheme": "general", "topic": "performance", "source": "S10", "as_of": "page viewed 08 Nov 2026",
-      "text": "Official scheme performance for Groww Mutual Fund schemes is published in the Downloads > Scheme Performance section of the AMC website and in the monthly factsheet." },
-    { "id": "GEN-RISK-LEVELS", "scheme": "general", "topic": "riskometer", "source": "S12", "as_of": "05 Oct 2020",
-      "text": "SEBI's riskometer has six levels: Low, Low to Moderate, Moderate, Moderately High, High and Very High. The riskometer is evaluated every month and disclosed on the AMC and AMFI websites within 10 days from the close of each month, along with the portfolio disclosure." },
-    { "id": "GEN-RISK-CHANGE", "scheme": "general", "topic": "riskometer", "source": "S12", "as_of": "05 Oct 2020",
-      "text": "When a scheme's riskometer changes, the AMC must inform unitholders of that scheme through a notice cum addendum and by email or SMS." },
-    { "id": "GEN-RISK-WHAT", "scheme": "general", "topic": "riskometer_def", "source": "S17", "as_of": "page viewed 08 Nov 2026",
-      "text": "A riskometer is a standardised risk measurement scale introduced by SEBI that every mutual fund scheme must display upfront, so investors know the scheme's level of risk. It classifies risk into six levels, from Low to Very High." },
-    { "id": "GEN-TER-WHAT", "scheme": "general", "topic": "expense_ratio_def", "source": "S18", "as_of": "page viewed 08 Nov 2026",
-      "text": "The Total Expense Ratio (TER) is the total of all costs of running and managing a mutual fund scheme, charged as a percentage of the scheme's daily net assets. The daily NAV is disclosed after deducting these expenses." },
-    { "id": "GEN-EXIT-WHAT", "scheme": "general", "topic": "exit_load_def", "source": "S03", "as_of": "30 Sep 2026",
-      "text": "An exit load is a charge applied when units are redeemed or switched out before a set period from the date of allotment. For example, Groww Large Cap Fund charges 1% within 7 days of allotment and nil after that." },
-    { "id": "GEN-CAPS", "scheme": "general", "topic": "definition", "source": "S13", "as_of": "06 Oct 2017",
-      "text": "SEBI defines large cap companies as the 1st to 100th company by full market capitalisation, mid cap as the 101st to 250th, and small cap as the 251st company onwards." },
-    { "id": "GEN-LC-RULE", "scheme": "large_cap", "topic": "category", "source": "S14", "as_of": "26 Feb 2026",
-      "text": "Under SEBI's categorisation rules, a Large Cap fund must invest at least 80% of total assets in equity and equity-related instruments of large cap companies." },
-    { "id": "GEN-ELSS-LOCK-GENERAL", "scheme": "general", "topic": "lock_in", "source": "S13", "as_of": "06 Oct 2017",
-      "text": "ELSS (tax saver) funds have a statutory lock-in of 3 years, as defined in SEBI's mutual fund categorisation circular. Other open-ended equity categories such as large cap, multi cap and index funds do not have this lock-in." }
+    {
+      "id": "LC-ER",
+      "scheme": "large_cap",
+      "topic": "expense_ratio",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "As on 30 Sep 2026, the base expense ratio of Groww Large Cap Fund was 2.09% for the Regular Plan and 1.18% for the Direct Plan, per the September 2026 factsheet."
+    },
+    {
+      "id": "LC-ER-CAP",
+      "scheme": "large_cap",
+      "topic": "expense_limit",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The SID of Groww Large Cap Fund estimates that up to 2.10% of the scheme's daily net assets will be charged as expenses. The actual expense ratio being charged is published on the Groww Mutual Fund website."
+    },
+    {
+      "id": "LC-EXIT",
+      "scheme": "large_cap",
+      "topic": "exit_load",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The exit load of Groww Large Cap Fund is 1% if units are redeemed or switched out within 7 days from the date of allotment. There is no exit load (nil) after 7 days from the date of allotment."
+    },
+    {
+      "id": "LC-MIN",
+      "scheme": "large_cap",
+      "topic": "min_sip",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The minimum SIP for Groww Large Cap Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (initial) investment is ₹500, in multiples of ₹1."
+    },
+    {
+      "id": "LC-INST",
+      "scheme": "large_cap",
+      "topic": "sip_instalments",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The minimum number of SIP instalments for Groww Large Cap Fund is 180 for daily, 24 for weekly, 12 for monthly and 4 for quarterly SIPs."
+    },
+    {
+      "id": "LC-BENCH",
+      "scheme": "large_cap",
+      "topic": "benchmark",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The benchmark of Groww Large Cap Fund is the NIFTY 100 TRI (Total Return Index)."
+    },
+    {
+      "id": "LC-RISK",
+      "scheme": "large_cap",
+      "topic": "riskometer",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The riskometer of Groww Large Cap Fund is at Very High risk. Its benchmark, NIFTY 100 TRI, is also at Very High risk on the benchmark riskometer."
+    },
+    {
+      "id": "LC-LOCK",
+      "scheme": "large_cap",
+      "topic": "lock_in",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Large Cap Fund has no lock-in period; its SID states that, as an open-ended large cap fund, lock-in is not applicable. An exit load of 1% applies if units are redeemed within 7 days of allotment."
+    },
+    {
+      "id": "LC-CAT",
+      "scheme": "large_cap",
+      "topic": "category",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww Large Cap Fund is an open ended equity scheme predominantly investing in large cap stocks. Its objective is to seek long-term capital appreciation from a portfolio invested predominantly in equity and equity-related securities of blue-chip large-cap companies, and it does not assure any returns."
+    },
+    {
+      "id": "LC-INCEP",
+      "scheme": "large_cap",
+      "topic": "inception",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww Large Cap Fund was launched (date of allotment) on 10 February 2012."
+    },
+    {
+      "id": "LC-FM",
+      "scheme": "large_cap",
+      "topic": "fund_manager",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Large Cap Fund is managed by Anupam Tiwari (since 11 May 2023), Saptarshee Chatterjee (since 24 Sep 2025), Nikhil Satam (since 22 Jul 2026) and Hitesh Das (since 30 Sep 2026)."
+    },
+    {
+      "id": "LC-PLANS",
+      "scheme": "large_cap",
+      "topic": "plans",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Large Cap Fund has a Regular Plan and a Direct Plan with a common portfolio and separate NAVs. Each plan offers a Growth option and an IDCW (Income Distribution cum Capital Withdrawal) option, with payout or reinvestment."
+    },
+    {
+      "id": "ELSS-ER",
+      "scheme": "elss",
+      "topic": "expense_ratio",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "As on 30 Sep 2026, the base expense ratio of Groww ELSS Tax Saver Fund was 2.08% for the Regular Plan and 0.83% for the Direct Plan, per the September 2026 factsheet."
+    },
+    {
+      "id": "ELSS-LOCK",
+      "scheme": "elss",
+      "topic": "lock_in",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww ELSS Tax Saver Fund has a lock-in period of 3 years, as stated in the September 2026 factsheet. Units can be redeemed only after the lock-in period is completed."
+    },
+    {
+      "id": "ELSS-LOCK-RULE",
+      "scheme": "elss",
+      "topic": "lock_in",
+      "source": "S10",
+      "as_of": "06 Oct 2017",
+      "text": "Under SEBI's scheme categorisation rules, an ELSS is an open ended equity linked saving scheme with a statutory lock-in of 3 years and a tax benefit. It must invest at least 80% of total assets in equity and equity related instruments, in line with the Equity Linked Saving Scheme, 2005."
+    },
+    {
+      "id": "ELSS-EXIT",
+      "scheme": "elss",
+      "topic": "exit_load",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The exit load of Groww ELSS Tax Saver Fund is nil. Units can be redeemed only after the lock-in period is completed."
+    },
+    {
+      "id": "ELSS-MIN",
+      "scheme": "elss",
+      "topic": "min_sip",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The minimum SIP for Groww ELSS Tax Saver Fund is ₹500 and in multiples of ₹500, including for daily SIPs. The minimum lumpsum (initial) investment is also ₹500 and in multiples of ₹500."
+    },
+    {
+      "id": "ELSS-BENCH",
+      "scheme": "elss",
+      "topic": "benchmark",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The benchmark of Groww ELSS Tax Saver Fund is the Nifty 500 TRI (Total Return Index)."
+    },
+    {
+      "id": "ELSS-RISK",
+      "scheme": "elss",
+      "topic": "riskometer",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The riskometer of Groww ELSS Tax Saver Fund is at Very High risk. Its benchmark, Nifty 500 TRI, is also at Very High risk on the benchmark riskometer."
+    },
+    {
+      "id": "ELSS-CAT",
+      "scheme": "elss",
+      "topic": "category",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww ELSS Tax Saver Fund is an open ended scheme with attributes in accordance with the Equity Linked Saving Scheme, 2005 notified by the Ministry of Finance. Its objective is long-term capital appreciation from a diversified portfolio of predominantly equity and equity-related securities, and it does not assure any returns."
+    },
+    {
+      "id": "ELSS-TAX",
+      "scheme": "elss",
+      "topic": "tax_benefit",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "As per its SID dated 30 Oct 2026, Groww ELSS Tax Saver Fund offers tax benefits under Section 123 read with Schedule XV of the Income Tax Act, 2025."
+    },
+    {
+      "id": "ELSS-INCEP",
+      "scheme": "elss",
+      "topic": "inception",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww ELSS Tax Saver Fund was launched (inception date) on 28 December 2017."
+    },
+    {
+      "id": "ELSS-FM",
+      "scheme": "elss",
+      "topic": "fund_manager",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww ELSS Tax Saver Fund is managed by Paras Matalia and Nikhil Satam."
+    },
+    {
+      "id": "ELSS-PLANS",
+      "scheme": "elss",
+      "topic": "plans",
+      "source": "S02",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww ELSS Tax Saver Fund has a Direct Plan and a Regular Plan with a common portfolio and separate NAVs. Each plan offers a Growth option and an IDCW option (payout)."
+    },
+    {
+      "id": "MC-ER",
+      "scheme": "multicap",
+      "topic": "expense_ratio",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "As on 30 Sep 2026, the base expense ratio of Groww Multicap Fund was 1.79% for the Regular Plan and 0.34% for the Direct Plan, per the September 2026 factsheet."
+    },
+    {
+      "id": "MC-EXIT",
+      "scheme": "multicap",
+      "topic": "exit_load",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The exit load of Groww Multicap Fund is 1% if units are redeemed or switched out within 1 year from the date of allotment. There is no exit load (nil) after 1 year from the date of allotment."
+    },
+    {
+      "id": "MC-MIN",
+      "scheme": "multicap",
+      "topic": "min_sip",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The minimum SIP for Groww Multicap Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (initial) investment is ₹500, in multiples of ₹1."
+    },
+    {
+      "id": "MC-INST",
+      "scheme": "multicap",
+      "topic": "sip_instalments",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The minimum number of SIP instalments for Groww Multicap Fund is 180 for daily, 24 for weekly, 12 for monthly and 4 for quarterly SIPs."
+    },
+    {
+      "id": "MC-BENCH",
+      "scheme": "multicap",
+      "topic": "benchmark",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The benchmark of Groww Multicap Fund is the Nifty 500 Multicap 50:25:25 Index TRI (Total Return Index)."
+    },
+    {
+      "id": "MC-RISK",
+      "scheme": "multicap",
+      "topic": "riskometer",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The riskometer of Groww Multicap Fund is at Very High risk. Its benchmark, the Nifty 500 Multicap 50:25:25 Index TRI, is also at Very High risk."
+    },
+    {
+      "id": "MC-LOCK",
+      "scheme": "multicap",
+      "topic": "lock_in",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Multicap Fund has no lock-in period, because it is an open-ended scheme. An exit load of 1% applies if units are redeemed within 1 year of allotment."
+    },
+    {
+      "id": "MC-CAT",
+      "scheme": "multicap",
+      "topic": "category",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Multicap Fund is an open-ended equity scheme investing across large-cap, mid-cap and small-cap stocks (Multi Cap category). It is meant for investors seeking long-term capital growth."
+    },
+    {
+      "id": "MC-RULE",
+      "scheme": "multicap",
+      "topic": "category",
+      "source": "S11",
+      "as_of": "26 Feb 2026",
+      "text": "Under SEBI's categorisation rules, a Multi Cap fund must invest at least 75% of total assets in equity, with at least 25% each in large cap, mid cap and small cap companies."
+    },
+    {
+      "id": "MC-INCEP",
+      "scheme": "multicap",
+      "topic": "inception",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww Multicap Fund was launched (inception date) on 16 December 2024."
+    },
+    {
+      "id": "MC-FM",
+      "scheme": "multicap",
+      "topic": "fund_manager",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Multicap Fund is managed by Anupam Tiwari (since 16 Dec 2024), Saptarshee Chatterjee (since 24 Sep 2025), Nikhil Satam (since 22 Jul 2026) and Hitesh Das (since 30 Sep 2026)."
+    },
+    {
+      "id": "MC-PLANS",
+      "scheme": "multicap",
+      "topic": "plans",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "Groww Multicap Fund has a Regular Plan and a Direct Plan with a common portfolio and separate NAVs. Each plan offers a Growth option and an IDCW (Income Distribution cum Capital Withdrawal) option."
+    },
+    {
+      "id": "TM-ER",
+      "scheme": "total_market",
+      "topic": "expense_ratio",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "As on 30 Sep 2026, the base expense ratio of Groww Nifty Total Market Index Fund was 0.90% for the Regular Plan and 0.53% for the Direct Plan, per the September 2026 factsheet."
+    },
+    {
+      "id": "TM-ER-CAP",
+      "scheme": "total_market",
+      "topic": "expense_limit",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "The SID of Groww Nifty Total Market Index Fund allows a base expense ratio of up to 0.90% of the scheme's daily net assets. The actual expenses being charged are published on the Groww Mutual Fund website."
+    },
+    {
+      "id": "TM-EXIT",
+      "scheme": "total_market",
+      "topic": "exit_load",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "The exit load of Groww Nifty Total Market Index Fund is 0.25% if units are redeemed or switched out within 7 days from the date of allotment. There is no exit load (nil) after 7 days from the date of allotment."
+    },
+    {
+      "id": "TM-MIN",
+      "scheme": "total_market",
+      "topic": "min_sip",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "The minimum SIP for Groww Nifty Total Market Index Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (application) amount is ₹500, in multiples of ₹1."
+    },
+    {
+      "id": "TM-BENCH",
+      "scheme": "total_market",
+      "topic": "benchmark",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "The benchmark of Groww Nifty Total Market Index Fund is the Nifty Total Market Index - TRI (Total Return Index). It is an open-ended scheme that replicates/tracks this index."
+    },
+    {
+      "id": "TM-RISK",
+      "scheme": "total_market",
+      "topic": "riskometer",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "The riskometer of Groww Nifty Total Market Index Fund is at Very High risk. Its benchmark, the Nifty Total Market Index - TRI, is also at Very High risk."
+    },
+    {
+      "id": "TM-LOCK",
+      "scheme": "total_market",
+      "topic": "lock_in",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "Groww Nifty Total Market Index Fund has no lock-in period; its SID states that, as an open-ended index fund, lock-in is not applicable. An exit load of 0.25% applies if units are redeemed within 7 days of allotment."
+    },
+    {
+      "id": "TM-CAT",
+      "scheme": "total_market",
+      "topic": "category",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "Groww Nifty Total Market Index Fund is an open-ended scheme replicating/tracking the Nifty Total Market Index (an index fund). It aims for returns in line with the Nifty Total Market Index - TRI, subject to tracking error."
+    },
+    {
+      "id": "TM-INCEP",
+      "scheme": "total_market",
+      "topic": "inception",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Groww Nifty Total Market Index Fund was launched (inception date) on 23 October 2023."
+    },
+    {
+      "id": "TM-FM",
+      "scheme": "total_market",
+      "topic": "fund_manager",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "Groww Nifty Total Market Index Fund is managed by Nikhil Satam, Aakash Chauhan and Shashi Kumar."
+    },
+    {
+      "id": "TM-PLANS",
+      "scheme": "total_market",
+      "topic": "plans",
+      "source": "S05",
+      "as_of": "SID dated 23 Oct 2026",
+      "text": "Groww Nifty Total Market Index Fund has a Regular Plan and a Direct Plan with a common portfolio and separate NAVs. Each plan offers a Growth option and an IDCW option, with payout or reinvestment."
+    },
+    {
+      "id": "GEN-STAMP",
+      "scheme": "general",
+      "topic": "stamp_duty",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "A stamp duty of 0.005% of the transaction value is levied on applicable mutual fund transactions, such as purchases, as stated in Groww Mutual Fund's scheme documents (for example, the Groww Large Cap Fund SID)."
+    },
+    {
+      "id": "GEN-CAS-DISPATCH",
+      "scheme": "general",
+      "topic": "cas_dispatch",
+      "source": "S06",
+      "as_of": "SAI dated 02 Nov 2026",
+      "text": "As per Groww Mutual Fund's SAI, a Consolidated Account Statement (CAS) is emailed within 12 days of the month end for any month in which your folio had a transaction (15 days for physical copies). Otherwise, a CAS with your holdings is emailed half-yearly, on or before 18 April and 18 October. On a specific request, the AMC provides an account statement within 5 business days."
+    },
+    {
+      "id": "GEN-CAS-HOW",
+      "scheme": "general",
+      "topic": "statement",
+      "source": "S12",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "To download a Consolidated Account Statement (CAS), log in to MF Central (mfcentral.com), choose a Summary or Detailed CAS and pick the period (current financial year, previous financial year or a specific period of up to 365 days). You can also request an e-CAS by email from CAMS (camsonline.com) or KFintech (mfs.kfintech.com)."
+    },
+    {
+      "id": "GEN-CG",
+      "scheme": "general",
+      "topic": "capital_gains",
+      "source": "S13",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "To download a capital-gains statement, use the Portfolio or Reports section of the platform you invested through, or the RTA websites. On CAMS (camsonline.com), go to Services for Investors > Statements > Capital Gain/Loss Statement; on KFintech (mfs.kfintech.com), go to Investor Statement and Report > Capital Gains Statement > Consolidated Capital Gains Statement."
+    },
+    {
+      "id": "GEN-ELSS-STMT",
+      "scheme": "general",
+      "topic": "elss_statement",
+      "source": "S15",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "To download your ELSS tax statement in the Groww app, go to your profile, select Reports, find 'Mutual Fund - ELSS statement' under Tax, and click Download. The password to open the report is your PAN in capital letters."
+    },
+    {
+      "id": "GEN-CONTACT",
+      "scheme": "general",
+      "topic": "contact",
+      "source": "S07",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "Groww Mutual Fund investor support can be reached at support@growwmf.in or +91 80501 80222. For offline document submission, investors can visit the nearest KFintech branch."
+    },
+    {
+      "id": "GEN-AMC",
+      "scheme": "general",
+      "topic": "amc",
+      "source": "S16",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "Groww Mutual Fund schemes are managed by Groww Asset Management Limited, whose SEBI Registration No. is MF/068/11/03."
+    },
+    {
+      "id": "GEN-DOCS",
+      "scheme": "general",
+      "topic": "documents",
+      "source": "S16",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "Groww Mutual Fund's website has a Downloads section with the KIM, SID, Statement of Additional Information (SAI), Fact Sheet, Riskometer, Expense Ratio and Scheme Performance documents."
+    },
+    {
+      "id": "GEN-FACTSHEET",
+      "scheme": "general",
+      "topic": "factsheet",
+      "source": "S16",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "Groww Mutual Fund publishes its monthly factsheets in the Downloads > Fact Sheet section of its website."
+    },
+    {
+      "id": "GEN-PERF",
+      "scheme": "general",
+      "topic": "performance",
+      "source": "S03",
+      "as_of": "30 Sep 2026",
+      "text": "Official performance figures for Groww Mutual Fund schemes are published in the monthly factsheet."
+    },
+    {
+      "id": "GEN-RISK-LEVELS",
+      "scheme": "general",
+      "topic": "riskometer",
+      "source": "S09",
+      "as_of": "05 Oct 2020",
+      "text": "SEBI's riskometer has six levels: Low, Low to Moderate, Moderate, Moderately High, High and Very High. The riskometer is evaluated every month and disclosed on the AMC and AMFI websites within 10 days from the close of each month, along with the portfolio disclosure."
+    },
+    {
+      "id": "GEN-RISK-CHANGE",
+      "scheme": "general",
+      "topic": "riskometer",
+      "source": "S09",
+      "as_of": "05 Oct 2020",
+      "text": "Any change in a scheme's riskometer must be communicated to its unitholders by way of a notice cum addendum and by email or SMS."
+    },
+    {
+      "id": "GEN-RISK-WHAT",
+      "scheme": "general",
+      "topic": "riskometer_def",
+      "source": "S14",
+      "as_of": "page viewed 08 Nov 2026",
+      "text": "A riskometer is a standardised risk measurement scale introduced by SEBI. It has six levels: Low, Low to Moderate, Moderate, Moderately High, High and Very High."
+    },
+    {
+      "id": "GEN-TER-WHAT",
+      "scheme": "general",
+      "topic": "expense_ratio_def",
+      "source": "S01",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "The expense ratio (annual scheme recurring expenses) is the fees and expenses for operating a scheme, such as the AMC's investment management and advisory fee, registrar and transfer agent fees and marketing and selling costs. It is charged as a percentage of the scheme's daily net assets."
+    },
+    {
+      "id": "GEN-EXIT-WHAT",
+      "scheme": "general",
+      "topic": "exit_load_def",
+      "source": "S04",
+      "as_of": "SID dated 30 Oct 2026",
+      "text": "An exit load is a charge applied when units are redeemed or switched out within a set period after allotment; it is deducted as a percentage of the NAV. For example, Groww Multicap Fund charges 1% if units are redeemed within 1 year of allotment."
+    },
+    {
+      "id": "GEN-CAPS",
+      "scheme": "general",
+      "topic": "definition",
+      "source": "S10",
+      "as_of": "06 Oct 2017",
+      "text": "SEBI defines large cap companies as the 1st to 100th company by full market capitalisation, mid cap as the 101st to 250th, and small cap as the 251st company onwards."
+    },
+    {
+      "id": "GEN-LC-RULE",
+      "scheme": "large_cap",
+      "topic": "category",
+      "source": "S11",
+      "as_of": "26 Feb 2026",
+      "text": "Under SEBI's categorisation rules, a Large Cap fund must invest at least 80% of total assets in equity and equity-related instruments of large cap companies."
+    },
+    {
+      "id": "GEN-ELSS-LOCK-GENERAL",
+      "scheme": "general",
+      "topic": "lock_in",
+      "source": "S10",
+      "as_of": "06 Oct 2017",
+      "text": "ELSS (tax saver) funds have a statutory lock-in of 3 years, as set out in SEBI's mutual fund categorisation circular."
+    }
   ]
 }

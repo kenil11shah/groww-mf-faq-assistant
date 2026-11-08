@@ -21,7 +21,7 @@ const srcCount = Object.keys(sources).length;
 ok(srcCount >= 15 && srcCount <= 25, `source count ${srcCount} outside 15-25`);
 for (const s of Object.values(sources)) ok(/^https:\/\/(www\.)?(growwmf\.in|assets-netstorage\.growwmf\.in|portal\.amfiindia\.com|amfiindia\.com|www\.amfiindia\.com|sebi\.gov\.in|www\.sebi\.gov\.in|mutualfundssahihai\.com|www\.mutualfundssahihai\.com|groww\.in)\//.test(s.url), `non-official source ${s.url}`);
 const used = new Set(corpus.chunks.map(c => c.source));
-for (const id of Object.keys(sources)) if (!['S08', 'S10'].includes(id)) ok(used.has(id), `source ${id} is never used by a chunk`);
+for (const id of Object.keys(sources)) if (!['S08'].includes(id)) ok(used.has(id), `source ${id} is never used by a chunk`);
 
 // ---------- 2. Behaviour (extractive mode) ----------
 async function check(c, opts, label) {
@@ -50,12 +50,12 @@ for (const c of cases) {
 // ---------- 4. Fake LLM misbehaving: guardrails must catch it ----------
 const q = 'What is the expense ratio of Groww Large Cap Fund?';
 let r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'The expense ratio of Groww Large Cap Fund is 0.95%.', model: 'fake' }) });
-ok(r.mode === 'extractive' && r.answer.includes('1.27%'), 'invented number must be rejected and replaced by the source text');
-r = await ask('What is the expense ratio of Groww Large Cap Fund regular plan?', { generate: async (_, h) => ({ answerable: true, chunk_id: 'LC-ER-2', answer: 'As on 30 Sep 2026, the base expense ratio of Groww Large Cap Fund (Regular Plan) was 2.09%.', model: 'fake' }) });
+ok(r.mode === 'extractive' && r.answer.includes('1.18%'), 'invented number must be rejected and replaced by the source text');
+r = await ask('What is the expense ratio of Groww Large Cap Fund regular plan?', { generate: async (_, h) => ({ answerable: true, chunk_id: 'LC-ER', answer: 'As on 30 Sep 2026, the base expense ratio of Groww Large Cap Fund (Regular Plan) was 2.09%.', model: 'fake' }) });
 ok(r.mode === 'llm', 'the chunk\'s own as-of date is allowed in an answer');
-r = await ask(q, { generate: async () => ({ answerable: true, chunk_id: 'NOT-A-CHUNK', answer: 'It is 1.27%.', model: 'fake' }) });
-ok(r.mode === 'extractive' && r.chunk_id === 'LC-ER-1', 'unknown chunk id must fall back to the top retrieved chunk');
-r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'It is 1.27%, so you should invest now.', model: 'fake' }) });
+r = await ask(q, { generate: async () => ({ answerable: true, chunk_id: 'NOT-A-CHUNK', answer: 'It is 1.18%.', model: 'fake' }) });
+ok(r.mode === 'extractive' && r.chunk_id === 'LC-ER', 'unknown chunk id must fall back to the top retrieved chunk');
+r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'It is 1.18%, so you should invest now.', model: 'fake' }) });
 ok(r.mode === 'extractive', 'advice inside a model answer must be rejected');
 r = await ask(q, { generate: async (_, h) => ({ answerable: true, chunk_id: h[0].chunk.id, answer: 'One. Two. Three. Four. Five.', model: 'fake' }) });
 ok(splitSentences(r.answer).length <= 3, 'model answers are cut to 3 sentences');

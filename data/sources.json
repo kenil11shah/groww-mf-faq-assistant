@@ -1,20 +1,20 @@
 {
   "S01": {
     "id": "S01",
-    "title": "Groww Large Cap Fund - Direct Growth (scheme page)",
+    "title": "Scheme Information Document - Groww Large Cap Fund (dated 30 Oct 2026)",
     "publisher": "Groww Mutual Fund (AMC)",
-    "type": "Scheme page",
-    "url": "https://www.growwmf.in/mutual-funds/groww-large-cap-fund-direct-growth",
-    "used_for": "Expense ratio, exit load, min SIP, benchmark, riskometer, fund managers",
+    "type": "SID (PDF)",
+    "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/SID/Equity%20Funds/Groww%20Large%20Cap%20Fund.pdf",
+    "used_for": "Benchmark, riskometer, SIP and lumpsum minimums, exit load, lock-in, plans, fund managers, expenses, stamp duty",
     "accessed_on": "2026-11-08"
   },
   "S02": {
     "id": "S02",
-    "title": "Groww ELSS Tax Saver Fund - Direct Growth (scheme page)",
+    "title": "Scheme Information Document - Groww ELSS Tax Saver Fund (dated 30 Oct 2026)",
     "publisher": "Groww Mutual Fund (AMC)",
-    "type": "Scheme page",
-    "url": "https://www.growwmf.in/mutual-funds/groww-elss-tax-saver-fund-direct-growth",
-    "used_for": "Expense ratio, lock-in, exit load, min SIP, benchmark, riskometer",
+    "type": "SID (PDF)",
+    "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/SID/Equity%20Funds/Groww%20ELSS%20Tax%20Saver%20Fundx.pdf",
+    "used_for": "Benchmark, riskometer, SIP and lumpsum minimums, exit load, plans, fund managers, tax section",
     "accessed_on": "2026-11-08"
   },
   "S03": {
@@ -23,25 +23,25 @@
     "publisher": "Groww Mutual Fund (AMC)",
     "type": "Factsheet (PDF)",
     "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/Fact%20Sheet/2024-%202025/Monthly%20Factsheet%20Sept%202026.pdf",
-    "used_for": "Base expense ratio (Regular/Direct), exit load, benchmark, inception date for all 4 schemes",
+    "used_for": "Base expense ratios (Regular and Direct), exit loads, ELSS lock-in, launch dates, Large Cap objective",
     "accessed_on": "2026-11-08"
   },
   "S04": {
     "id": "S04",
     "title": "Scheme Information Document - Groww Multicap Fund (dated 30 Oct 2026)",
-    "publisher": "Groww Mutual Fund via AMFI portal",
+    "publisher": "Groww Mutual Fund (AMC)",
     "type": "SID (PDF)",
-    "url": "https://portal.amfiindia.com/spages/14047.pdf",
-    "used_for": "Multicap benchmark, riskometer, min SIP, exit load, lock-in, plans",
+    "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/SID/Equity%20Funds/Groww%20Multicap%20Fund.pdf",
+    "used_for": "Benchmark, riskometer, SIP and lumpsum minimums, exit load, lock-in, plans, fund managers",
     "accessed_on": "2026-11-08"
   },
   "S05": {
     "id": "S05",
-    "title": "Scheme Information Document - Groww Nifty Total Market Index Fund (dated 30 Jul 2026)",
-    "publisher": "Groww Mutual Fund via AMFI portal",
+    "title": "Scheme Information Document - Groww Nifty Total Market Index Fund (dated 23 Oct 2026)",
+    "publisher": "Groww Mutual Fund (AMC)",
     "type": "SID (PDF)",
-    "url": "https://portal.amfiindia.com/spages/13777.pdf",
-    "used_for": "Index fund benchmark, riskometer, min SIP, exit load, lock-in, plans",
+    "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/SID/Index%20Funds/SID_Groww%20Nifty%20Total%20Market%20Index%20Fund.pdf",
+    "used_for": "Benchmark, riskometer, SIP and lumpsum minimums, exit load, lock-in, plans, fund managers, expense limit",
     "accessed_on": "2026-11-08"
   },
   "S06": {
@@ -50,7 +50,7 @@
     "publisher": "Groww Mutual Fund via AMFI portal",
     "type": "SAI (PDF)",
     "url": "https://portal.amfiindia.com/spages/sai63.pdf",
-    "used_for": "Account statement and CAS dispatch timelines",
+    "used_for": "When account statements and the CAS are sent",
     "accessed_on": "2026-11-08"
   },
   "S07": {
@@ -73,69 +73,42 @@
   },
   "S09": {
     "id": "S09",
-    "title": "Downloads - Fact Sheet",
-    "publisher": "Groww Mutual Fund (AMC)",
-    "type": "Web page",
-    "url": "https://www.growwmf.in/downloads/fact-sheet",
-    "used_for": "Where to find monthly factsheets",
-    "accessed_on": "2026-11-08"
-  },
-  "S10": {
-    "id": "S10",
-    "title": "Downloads - Scheme Performance",
-    "publisher": "Groww Mutual Fund (AMC)",
-    "type": "Web page",
-    "url": "https://www.growwmf.in/downloads/scheme-performance",
-    "used_for": "Link for performance / returns questions",
-    "accessed_on": "2026-11-08"
-  },
-  "S11": {
-    "id": "S11",
-    "title": "Downloads - KIM (Key Information Memorandum)",
-    "publisher": "Groww Mutual Fund (AMC)",
-    "type": "Web page",
-    "url": "https://www.growwmf.in/downloads/kim",
-    "used_for": "Where to find KIM / scheme documents",
-    "accessed_on": "2026-11-08"
-  },
-  "S12": {
-    "id": "S12",
     "title": "Circular on Product Labeling in Mutual Fund schemes - Risk-o-meter (05 Oct 2020)",
     "publisher": "SEBI",
     "type": "Circular (PDF)",
     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2020/1602580413614.pdf",
-    "used_for": "Riskometer levels, monthly evaluation, disclosure rules",
+    "used_for": "Six riskometer levels, monthly evaluation, disclosure and change rules",
     "accessed_on": "2026-11-08"
   },
-  "S13": {
-    "id": "S13",
+  "S10": {
+    "id": "S10",
     "title": "Categorization and Rationalization of Mutual Fund Schemes (06 Oct 2017)",
     "publisher": "SEBI (hosted by AMFI)",
     "type": "Circular (PDF)",
     "url": "https://www.amfiindia.com/Themes/Theme1/downloads/1507291273374.pdf",
-    "used_for": "Large/mid/small cap definitions, ELSS 3-year statutory lock-in",
+    "used_for": "Large/mid/small cap definitions, ELSS statutory 3-year lock-in",
     "accessed_on": "2026-11-08"
   },
-  "S14": {
-    "id": "S14",
+  "S11": {
+    "id": "S11",
     "title": "Categorization and Rationalization of Mutual Fund Schemes (26 Feb 2026)",
     "publisher": "SEBI",
     "type": "Circular",
     "url": "https://www.sebi.gov.in/legal/circulars/feb-2026/categorization-and-rationalization-of-mutual-fund-schemes_99983.html",
-    "used_for": "Current category rules for Large Cap, Multi Cap and ELSS",
+    "used_for": "Current rules for Large Cap, Multi Cap and ELSS funds",
     "accessed_on": "2026-11-08"
   },
-  "S15": {
-    "id": "S15",
-    "title": "Download Consolidated Account Statement (CAS)",
+  "S12": {
+    "id": "S12",
+    "title": "Download CAS",
     "publisher": "AMFI",
     "type": "Web page",
-    "url": "https://amfiindia.com/investor-corner/online-center/download-CAS.html",
-    "used_for": "How to get CAS via CAMS, KFintech, MF Central",
+    "url": "https://www.amfiindia.com/online-center/download-cas",
+    "used_for": "How to get a CAS via MF Central, CAMS and KFintech",
     "accessed_on": "2026-11-08"
   },
-  "S16": {
-    "id": "S16",
+  "S13": {
+    "id": "S13",
     "title": "How to Get Capital Gain Statement for Mutual Funds?",
     "publisher": "AMFI (Mutual Funds Sahi Hai)",
     "type": "Web page",
@@ -143,8 +116,8 @@
     "used_for": "Steps to download a capital-gains statement",
     "accessed_on": "2026-11-08"
   },
-  "S17": {
-    "id": "S17",
+  "S14": {
+    "id": "S14",
     "title": "What is a Riskometer and what are the different levels?",
     "publisher": "AMFI (Mutual Funds Sahi Hai)",
     "type": "Web page",
@@ -152,31 +125,22 @@
     "used_for": "Riskometer explainer",
     "accessed_on": "2026-11-08"
   },
-  "S18": {
-    "id": "S18",
-    "title": "What is Total Expense Ratio?",
-    "publisher": "AMFI",
-    "type": "Web page",
-    "url": "https://amfiindia.com/investor-corner/knowledge-center/Expense-Ratio.html",
-    "used_for": "Expense ratio explainer",
-    "accessed_on": "2026-11-08"
-  },
-  "S19": {
-    "id": "S19",
-    "title": "How to download tax statement (for ELSS)",
+  "S15": {
+    "id": "S15",
+    "title": "What is a mutual funds ELSS report? (tax statement download)",
     "publisher": "Groww (platform help centre)",
     "type": "Help page",
     "url": "https://groww.in/help/mutual-funds/order/how-to-download-tax-statement--for-elss--77",
     "used_for": "ELSS statement download steps in the Groww app",
     "accessed_on": "2026-11-08"
   },
-  "S20": {
-    "id": "S20",
+  "S16": {
+    "id": "S16",
     "title": "Groww Mutual Fund - home page",
     "publisher": "Groww Mutual Fund (AMC)",
     "type": "Web page",
     "url": "https://www.growwmf.in/",
-    "used_for": "AMC name and SEBI registration number",
+    "used_for": "AMC name, SEBI registration number, Downloads menu",
     "accessed_on": "2026-11-08"
   }
 }

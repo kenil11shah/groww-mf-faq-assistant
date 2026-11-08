@@ -2,16 +2,16 @@
  {
   "q": "What is the expense ratio of Groww Large Cap Fund?",
   "type": "answer",
-  "chunk": "LC-ER-1",
-  "source": "S01",
-  "contains": "1.27%"
+  "chunk": "LC-ER",
+  "source": "S03",
+  "contains": "1.18%"
  },
  {
   "q": "Expense ratio of Groww ELSS Tax Saver Fund direct plan",
   "type": "answer",
-  "chunk": "ELSS-ER-1",
-  "source": "S02",
-  "contains": "0.50%"
+  "chunk": "ELSS-ER",
+  "source": "S03",
+  "contains": "0.83%"
  },
  {
   "q": "TER of Groww Multicap Fund",
@@ -31,21 +31,21 @@
   "q": "ELSS lock-in?",
   "type": "answer",
   "chunk": "ELSS-LOCK",
-  "source": "S02",
+  "source": "S03",
   "contains": "3 years"
  },
  {
   "q": "What is the lock-in period of Groww ELSS Tax Saver Fund?",
   "type": "answer",
   "chunk": "ELSS-LOCK",
-  "source": "S02",
+  "source": "S03",
   "contains": "3 years"
  },
  {
   "q": "Is there a lock-in for Groww Large Cap Fund?",
   "type": "answer",
   "chunk": "LC-LOCK",
-  "source": "S03"
+  "source": "S01"
  },
  {
   "q": "Does the multicap fund have a lock in",
@@ -57,7 +57,7 @@
   "q": "Exit load of Groww Multicap Fund",
   "type": "answer",
   "chunk": "MC-EXIT",
-  "source": "S03",
+  "source": "S04",
   "contains": "1 year"
  },
  {
@@ -99,7 +99,8 @@
   "q": "What is the minimum lumpsum investment in Groww ELSS Tax Saver Fund?",
   "type": "answer",
   "chunk": "ELSS-MIN",
-  "source": "S02"
+  "source": "S02",
+  "contains": "multiples of ₹500"
  },
  {
   "q": "How many SIP instalments are needed in Groww Multicap Fund?",
@@ -139,7 +140,7 @@
   "type": "answer",
   "chunk": "LC-BENCH",
   "source": "S01",
-  "contains": "Nifty 100"
+  "contains": "NIFTY 100"
  },
  {
   "q": "Who manages Groww Multicap Fund?",
@@ -170,13 +171,13 @@
   "q": "How do I download my capital-gains statement?",
   "type": "answer",
   "chunk": "GEN-CG",
-  "source": "S16"
+  "source": "S13"
  },
  {
   "q": "How do I get my consolidated account statement (CAS)?",
   "type": "answer",
   "chunk": "GEN-CAS-HOW",
-  "source": "S15"
+  "source": "S12"
  },
  {
   "q": "When is the CAS sent by email?",
@@ -188,43 +189,43 @@
   "q": "How do I download ELSS tax statement on Groww?",
   "type": "answer",
   "chunk": "GEN-ELSS-STMT",
-  "source": "S19"
+  "source": "S15"
  },
  {
   "q": "What is a riskometer?",
   "type": "answer",
   "chunk": "GEN-RISK-WHAT",
-  "source": "S17"
+  "source": "S14"
  },
  {
   "q": "What is an exit load?",
   "type": "answer",
   "chunk": "GEN-EXIT-WHAT",
-  "source": "S03"
+  "source": "S04"
  },
  {
   "q": "What does total expense ratio mean?",
   "type": "answer",
   "chunk": "GEN-TER-WHAT",
-  "source": "S18"
+  "source": "S01"
  },
  {
   "q": "How many levels does the riskometer have and how often is it updated?",
   "type": "answer",
   "chunk": "GEN-RISK-LEVELS",
-  "source": "S12"
+  "source": "S09"
  },
  {
   "q": "What is the definition of a large cap company?",
   "type": "answer",
   "chunk": "GEN-CAPS",
-  "source": "S13"
+  "source": "S10"
  },
  {
   "q": "What is the SEBI registration number of Groww Mutual Fund?",
   "type": "answer",
   "chunk": "GEN-AMC",
-  "source": "S20"
+  "source": "S16"
  },
  {
   "q": "How can I contact Groww Mutual Fund customer support?",
@@ -242,7 +243,7 @@
   "q": "Where can I find the KIM and SID documents?",
   "type": "answer",
   "chunk": "GEN-DOCS",
-  "source": "S11"
+  "source": "S16"
  },
  {
   "q": "Minimum SIP?",
@@ -381,7 +382,7 @@
   "q": "What is the NAV of Groww Large Cap Fund?",
   "type": "not_found",
   "reason": "unsupported",
-  "source": "S01"
+  "source": "S03"
  },
  {
   "q": "Top holdings of Groww Multicap Fund",
@@ -393,7 +394,7 @@
   "q": "What is the AUM of Groww ELSS Tax Saver Fund?",
   "type": "not_found",
   "reason": "unsupported",
-  "source": "S02"
+  "source": "S03"
  },
  {
   "q": "What is ELSS?",
@@ -411,13 +412,13 @@
   "q": "Is there any fee to exit Groww Multicap Fund early?",
   "type": "answer",
   "chunk": "MC-EXIT",
-  "source": "S03"
+  "source": "S04"
  },
  {
   "q": "What is the riskometer?",
   "type": "answer",
   "chunk": "GEN-RISK-WHAT",
-  "source": "S17"
+  "source": "S14"
  },
  {
   "q": "What is SIP?",
@@ -431,9 +432,36 @@
  {
   "q": "What is the expense ratio of Groww Large Cap Fund regular plan?",
   "type": "answer",
-  "chunk": "LC-ER-2",
+  "chunk": "LC-ER",
   "source": "S03",
   "contains": "2.09%"
+ },
+ {
+  "q": "Does Groww ELSS Tax Saver Fund give a tax benefit under 80C?",
+  "type": "answer",
+  "chunk": "ELSS-TAX",
+  "source": "S02",
+  "contains": "Section 123"
+ },
+ {
+  "q": "What is the maximum expense ratio allowed for Groww Nifty Total Market Index Fund?",
+  "type": "answer",
+  "chunk": "TM-ER-CAP",
+  "source": "S05",
+  "contains": "0.90%"
+ },
+ {
+  "q": "What is the expense limit of Groww Large Cap Fund?",
+  "type": "answer",
+  "chunk": "LC-ER-CAP",
+  "source": "S01",
+  "contains": "2.10%"
+ },
+ {
+  "q": "Can I withdraw ELSS before 3 years?",
+  "type": "answer",
+  "chunk": "ELSS-LOCK",
+  "source": "S03"
  },
  {
   "q": "What is the weather in Mumbai?",
