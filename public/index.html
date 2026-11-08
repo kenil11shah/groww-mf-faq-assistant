@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Groww MF Facts</title>
+  <meta name="description" content="A facts-only FAQ assistant for Groww Mutual Fund schemes. Every answer cites one official source. No investment advice.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b5f4f'/%3E%3Cpath d='M9 21l5-6 4 3 5-7' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6f5; --surface: #ffffff; --surface-2: #eef3f1; --ink: #14201c; --ink-2: #4a5a54; --ink-3: #6f7f79;
+      --line: #dfe6e3; --accent: #0b5f4f; --accent-ink: #ffffff; --accent-soft: #e2f1ec; --warn-bg: #fff6e5; --warn-ink: #7a4a00;
+      --refuse-bg: #f6f3fb; --refuse-line: #ddd3ee; --shadow: 0 1px 2px rgba(16,32,28,.06), 0 4px 16px rgba(16,32,28,.05);
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1513; --surface: #161e1b; --surface-2: #1c2622; --ink: #e8efec; --ink-2: #b4c2bd; --ink-3: #8d9c97;
+        --line: #26332e; --accent: #43c19f; --accent-ink: #062019; --accent-soft: #17302a; --warn-bg: #2c2312; --warn-ink: #f2c879;
+        --refuse-bg: #1d1a26; --refuse-line: #352e47; --shadow: none; color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { background: var(--bg); color: var(--ink); font: 15px/1.55 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .wrap { max-width: 760px; margin: 0 auto; min-height: 100dvh; display: flex; flex-direction: column;
+      padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    header { padding-block: 28px 8px; display: flex; align-items: center; gap: 12px; }
+    .logo { width: 40px; height: 40px; border-radius: 10px; background: var(--accent); display: grid; place-items: center; flex: none; }
+    .logo svg { width: 24px; height: 24px; }
+    h1 { font-size: 20px; line-height: 1.2; margin: 0; letter-spacing: -.01em; }
+    .sub { margin: 2px 0 0; color: var(--ink-3); font-size: 13px; }
+    .note { margin: 14px 0 0; display: flex; gap: 10px; align-items: flex-start; background: var(--warn-bg); color: var(--warn-ink);
+      border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+    .note b { font-weight: 600; }
+    main { flex: 1; padding-block: 16px 140px; display: flex; flex-direction: column; gap: 14px; }
+    .welcome { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
+    .welcome p { margin: 0 0 12px; }
+    .schemes { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+    .schemes li { font-size: 12.5px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; color: var(--ink-2); }
+    .label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); margin: 0 0 8px; font-weight: 600; }
+    .examples { display: grid; gap: 8px; }
+    .chip { text-align: left; font: inherit; font-size: 14px; color: var(--accent); background: var(--accent-soft); border: 1px solid transparent;
+      border-radius: 10px; padding: 9px 12px; cursor: pointer; }
+    .chip:hover { border-color: var(--accent); }
+    .msg { max-width: 92%; }
+    .msg.user { align-self: flex-end; background: var(--accent); color: var(--accent-ink); border-radius: 14px 14px 4px 14px; padding: 9px 14px; overflow-wrap: anywhere; }
+    .msg.bot { align-self: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 14px 14px 14px 4px; padding: 14px 16px; box-shadow: var(--shadow); }
+    .msg.bot.refusal { background: var(--refuse-bg); border-color: var(--refuse-line); }
+    .tag { display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .02em; color: var(--ink-3); margin-bottom: 4px; }
+    .answer { margin: 0; }
+    .meta { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--ink-2); display: grid; gap: 3px; }
+    .meta a { color: var(--accent); font-weight: 500; text-decoration: none; overflow-wrap: anywhere; }
+    .meta a:hover { text-decoration: underline; }
+    .opts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .opts .chip { font-size: 13px; padding: 6px 10px; }
+    .typing { color: var(--ink-3); font-size: 14px; }
+    .typing i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--ink-3); margin-right: 3px; animation: b 1s infinite; }
+    .typing i:nth-child(2) { animation-delay: .15s } .typing i:nth-child(3) { animation-delay: .3s }
+    @keyframes b { 0%, 80%, 100% { opacity: .25 } 40% { opacity: 1 } }
+    .composer { position: fixed; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, var(--bg) 70%, transparent);
+      padding-bottom: max(14px, env(safe-area-inset-bottom, 0px)); padding-top: 18px; }
+    .composer .inner { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    form { display: flex; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px; box-shadow: var(--shadow); }
+    input { flex: 1; min-width: 0; font: inherit; border: 0; outline: 0; background: transparent; color: var(--ink); padding: 8px 10px; }
+    button.send { font: inherit; font-weight: 600; border: 0; border-radius: 10px; background: var(--accent); color: var(--accent-ink); padding: 0 16px; cursor: pointer; }
+    button.send:disabled { opacity: .5; cursor: default; }
+    .hint { font-size: 12px; color: var(--ink-3); margin: 6px 4px 0; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    .hint button { font: inherit; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; }
+    .pii { color: #b42318; }
+    dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); max-width: min(680px, calc(100vw - 32px)); padding: 0; }
+    dialog::backdrop { background: rgba(0,0,0,.35); }
+    .dlg-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--surface); }
+    .dlg-head h2 { margin: 0; font-size: 16px; }
+    .dlg-body { padding: 14px 18px 18px; font-size: 13.5px; }
+    .dlg-body ol { padding-left: 22px; margin: 8px 0 0; display: grid; gap: 6px; }
+    .dlg-body a { color: var(--accent); }
+    .close { font: inherit; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); border-radius: 8px; padding: 4px 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 16l5-6 4 3 7-8" stroke="white" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <h1>Groww MF Facts</h1>
+        <p class="sub">FAQ assistant for Groww Mutual Fund schemes</p>
+      </div>
+    </header>
+    <div class="note" role="note"><span aria-hidden="true">ⓘ</span><span id="disclaimer"><b>Facts-only. No investment advice.</b> Answers come only from official Groww Mutual Fund, SEBI and AMFI pages, and every answer shows its source.</span></div>
+
+    <main id="chat" aria-live="polite">
+      <section class="welcome">
+        <p>Hi! Ask me a factual question about these Groww Mutual Fund schemes: expense ratio, exit load, minimum SIP, lock-in, riskometer or benchmark. I can also tell you how to download your statements.</p>
+        <ul class="schemes">
+          <li>Groww Large Cap Fund</li><li>Groww ELSS Tax Saver Fund</li><li>Groww Multicap Fund</li><li>Groww Nifty Total Market Index Fund</li>
+        </ul>
+        <p class="label">Try one of these</p>
+        <div class="examples">
+          <button class="chip" type="button">What is the expense ratio of Groww Large Cap Fund?</button>
+          <button class="chip" type="button">What is the lock-in period of Groww ELSS Tax Saver Fund?</button>
+          <button class="chip" type="button">How do I download my capital-gains statement?</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="composer">
+    <div class="inner">
+      <form id="form" autocomplete="off">
+        <input id="q" name="q" maxlength="500" placeholder="Ask a fact, e.g. exit load of Groww Multicap Fund" aria-label="Your question">
+        <button class="send" id="send" type="submit">Ask</button>
+      </form>
+      <p class="hint"><span id="hint">Please don't enter PAN, Aadhaar, account numbers, OTPs, email or phone numbers.</span>
+        <button type="button" id="openSources">View all sources</button></p>
+    </div>
+  </div>
+
+  <dialog id="sources">
+    <div class="dlg-head"><h2>Official sources used</h2><button class="close" type="button" id="closeSources">Close</button></div>
+    <div class="dlg-body">
+      <p style="margin:0">This assistant answers only from these public pages. It is an independent student project and is not affiliated with or endorsed by Groww. <span id="updated"></span></p>
+      <ol id="sourceList"></ol>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

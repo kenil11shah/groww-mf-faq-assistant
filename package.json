@@ -1,0 +1,16 @@
+{
+  "name": "groww-mf-faq-assistant",
+  "version": "1.0.0",
+  "description": "Facts-only FAQ assistant for Groww Mutual Fund schemes, answering from official AMC, SEBI and AMFI pages with one citation per answer.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "node server.js",
+    "build:sources": "node scripts/build-sources.js",
+    "test": "node tests/run-tests.js",
+    "sample-qa": "node scripts/make-sample-qa.js"
+  },
+  "author": "Kenil Shah",
+  "license": "MIT"
+}
