@@ -1,6 +1,6 @@
 # Sample Q&A
 
-Real answers produced by the assistant. Each answer is at most 3 sentences, carries exactly one source link and the "Last updated from sources" date.
+Real answers from the live prototype (https://groww-mf-faq-assistant-livid.vercel.app), captured on 08 Nov 2026 with Gemini switched on. Each answer is at most 3 sentences, carries exactly one source link and the "Last updated from sources" date.
 
 ### 1. What is the expense ratio of Groww Large Cap Fund?
 
@@ -33,7 +33,7 @@ Real answers produced by the assistant. Each answer is at most 3 sentences, carr
 
 **Result:** Answered
 
-> The minimum SIP for Groww Nifty Total Market Index Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1. The minimum lumpsum (application) amount is ₹500, in multiples of ₹1.
+> The minimum SIP for Groww Nifty Total Market Index Fund is ₹500 for monthly and quarterly SIPs and ₹100 for daily and weekly SIPs, in multiples of ₹1.
 >
 > Source: [Scheme Information Document - Groww Nifty Total Market Index Fund (dated 30 Jul 2026)](https://portal.amfiindia.com/spages/13777.pdf)  
 > Last updated from sources: 08 Nov 2026
